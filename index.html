@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Vasta</title>
+  <style>
+    body {
+      background-color: #000000;
+      color: #F4F4F5;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 36px 20px;
+    }
+    h1, h2 {
+      color: #10B981;
+      letter-spacing: 0.4px;
+    }
+    h1 {
+      border-bottom: 1px solid #27272A;
+      padding-bottom: 14px;
+      margin-bottom: 8px;
+    }
+    .accent-sos {
+      color: #FF4500;
+      font-weight: bold;
+    }
+    .badge {
+      display: inline-block;
+      background-color: #0B281D;
+      border: 1px solid #10B981;
+      color: #10B981;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.8px;
+      margin-bottom: 16px;
+    }
+    .card {
+      background-color: #121417;
+      border: 1px solid #27272A;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin: 20px 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      color: #10B981;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 44px;
+      padding-top: 18px;
+      border-top: 1px solid #27272A;
+      font-size: 13px;
+      color: #9CA3AF;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="badge">ZERO SERVERS • 100% OFFLINE PEER-TO-PEER</div>
+  <h1>Privacy Policy for Vasta</h1>
+  <p><strong>Developer:</strong> Kazata Dev<br>
+  <strong>Effective Date:</strong> November 18, 2026</p>
+
+  <div class="card">
+    <p><strong>Core Privacy Guarantee:</strong> Vasta is engineered on a strict <strong>Zero-Server, Local-First architecture</strong>. We do not operate central servers, cloud databases, user accounts, or analytics trackers. We never collect, store, sell, or transmit your personal data to any developer or third-party server.</p>
+  </div>
+
+  <h2>1. How Vasta Works (Peer-to-Peer Architecture)</h2>
+  <p>Vasta ("the App") is an offline communication and emergency rescue utility designed for remote communities, families, hikers, and disaster zones. All wireless communications occur directly between nearby smartphones using Bluetooth Low Energy (BLE) and Wi-Fi Direct via the Google Nearby Connections API, without requiring cellular towers or internet access.</p>
+
+  <h2>2. Information Handled Strictly On-Device</h2>
+  <ul>
+    <li><strong>Cryptographic Device Identity:</strong> Upon first launch, Vasta automatically generates a local cryptographic keypair (Ed25519) and a random short device identifier (e.g., <code>VST-XXXX</code>) stored exclusively inside your phone's secure hardware keystore. No email address, phone number, name, or biometric data is requested or collected.</li>
+    <li><strong>Messages &amp; Encrypted Private Channels:</strong> Messages sent or received in the Public Channel or AES-256 encrypted QR Private Channels are stored locally on your device using an on-device SQLite database. Routine messages are automatically purged after 7 days unless explicitly locked by you as forensic evidence.</li>
+    <li><strong>GPS Location &amp; Altitude Telemetry:</strong> Vasta accesses your device's satellite GPS coordinates (Latitude, Longitude, and Altitude) solely on-device to calculate distances, operate the <span class="accent-sos">Rescue Direction Compass</span>, and attach location data when you explicitly send a message or activate an <span class="accent-sos">Emergency SOS Beacon</span>.</li>
+  </ul>
+
+  <h2>3. Device Permissions &amp; Why They Are Needed</h2>
+  <ul>
+    <li><strong>Bluetooth &amp; Nearby Wi-Fi Devices:</strong> Required exclusively to discover nearby Vasta devices and exchange offline peer-to-peer messages.</li>
+    <li><strong>Precise Location:</strong> Required by the Android operating system to scan for nearby Bluetooth/Wi-Fi Direct peers and to obtain satellite GPS and Altitude coordinates.</li>
+    <li><strong>Microphone (Speech-to-Text):</strong> Used only when you tap the microphone button to dictate short messages using your device's built-in speech recognition engine. Audio is never recorded or uploaded to any server by Vasta.</li>
+    <li><strong>Camera &amp; Flashlight:</strong> Used solely to scan encrypted group QR codes and to flash visual Morse code (<code>... --- ...</code>) emergency signals via the rear LED torch when activated by you.</li>
+  </ul>
+
+  <h2>4. In-App Purchases</h2>
+  <p>Optional one-time upgrades (Tactical &amp; Rescue Pack) are processed securely through Google Play Billing. Vasta does not access, process, or store your payment card or financial information.</p>
+
+  <h2>5. User Control &amp; Data Deletion</h2>
+  <p>Because 100% of your data resides locally on your smartphone, you hold complete control over it at all times. You can block any nearby device locally within the App, delete private channels, or permanently erase all stored messages, channel keys, and cryptographic identifiers by uninstalling Vasta or clearing the App's storage in Android Settings.</p>
+
+  <h2>6. Safety Disclaimer</h2>
+  <p>Vasta is a community peer-to-peer communication tool and is not a replacement for official emergency services or dedicated satellite rescue devices. Always contact official rescue authorities whenever cellular or landline networks are available.</p>
+
+  <h2>7. Contact Information</h2>
+  <p>If you have any questions about this Privacy Policy or the Vasta application, please contact the developer at: <a href="mailto:kazatadev@gmail.com">kazatadev@gmail.com</a> <em>(Replace with your active developer support email)</em>.</p>
+
+  <footer>
+    &copy; 2026 Kazata Dev — Vasta Off-Grid Systems. Built for human connection and resilience.
+  </footer>
+
+</body>
+</html>
+
 
